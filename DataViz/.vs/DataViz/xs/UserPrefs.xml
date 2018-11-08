@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{8D7DB6A8-5EE4-45FA-B2B8-15610EA58FD6}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DataViz.csproj">
+    <Files>
+      <File FileName="DataViz.csproj" Line="19" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.DataViz PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>

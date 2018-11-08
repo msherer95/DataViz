@@ -1,0 +1,14 @@
+/Users/marksherer/Desktop/DataViz/DataViz.TableImport/bin/Debug/netcoreapp2.1/DataViz.TableImport.deps.json
+/Users/marksherer/Desktop/DataViz/DataViz.TableImport/bin/Debug/netcoreapp2.1/DataViz.TableImport.dll
+/Users/marksherer/Desktop/DataViz/DataViz.TableImport/bin/Debug/netcoreapp2.1/DataViz.TableImport.pdb
+/Users/marksherer/Desktop/DataViz/DataViz.TableImport/bin/Debug/netcoreapp2.1/DataViz.Contracts.dll
+/Users/marksherer/Desktop/DataViz/DataViz.TableImport/bin/Debug/netcoreapp2.1/DataViz.Db.dll
+/Users/marksherer/Desktop/DataViz/DataViz.TableImport/bin/Debug/netcoreapp2.1/DataViz.Contracts.pdb
+/Users/marksherer/Desktop/DataViz/DataViz.TableImport/bin/Debug/netcoreapp2.1/DataViz.Db.pdb
+/Users/marksherer/Desktop/DataViz/DataViz.TableImport/obj/Debug/netcoreapp2.1/DataViz.TableImport.csprojAssemblyReference.cache
+/Users/marksherer/Desktop/DataViz/DataViz.TableImport/obj/Debug/netcoreapp2.1/DataViz.TableImport.csproj.CoreCompileInputs.cache
+/Users/marksherer/Desktop/DataViz/DataViz.TableImport/obj/Debug/netcoreapp2.1/DataViz.TableImport.AssemblyInfoInputs.cache
+/Users/marksherer/Desktop/DataViz/DataViz.TableImport/obj/Debug/netcoreapp2.1/DataViz.TableImport.AssemblyInfo.cs
+/Users/marksherer/Desktop/DataViz/DataViz.TableImport/obj/Debug/netcoreapp2.1/DataViz.TableImport.csproj.CopyComplete
+/Users/marksherer/Desktop/DataViz/DataViz.TableImport/obj/Debug/netcoreapp2.1/DataViz.TableImport.dll
+/Users/marksherer/Desktop/DataViz/DataViz.TableImport/obj/Debug/netcoreapp2.1/DataViz.TableImport.pdb

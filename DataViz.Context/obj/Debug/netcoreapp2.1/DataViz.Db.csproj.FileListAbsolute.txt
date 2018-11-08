@@ -1,0 +1,12 @@
+/Users/marksherer/Desktop/DataViz/DataViz.Context/bin/Debug/netcoreapp2.1/DataViz.Db.deps.json
+/Users/marksherer/Desktop/DataViz/DataViz.Context/bin/Debug/netcoreapp2.1/DataViz.Db.dll
+/Users/marksherer/Desktop/DataViz/DataViz.Context/bin/Debug/netcoreapp2.1/DataViz.Db.pdb
+/Users/marksherer/Desktop/DataViz/DataViz.Context/bin/Debug/netcoreapp2.1/DataViz.Contracts.dll
+/Users/marksherer/Desktop/DataViz/DataViz.Context/bin/Debug/netcoreapp2.1/DataViz.Contracts.pdb
+/Users/marksherer/Desktop/DataViz/DataViz.Context/obj/Debug/netcoreapp2.1/DataViz.Db.csprojAssemblyReference.cache
+/Users/marksherer/Desktop/DataViz/DataViz.Context/obj/Debug/netcoreapp2.1/DataViz.Db.csproj.CoreCompileInputs.cache
+/Users/marksherer/Desktop/DataViz/DataViz.Context/obj/Debug/netcoreapp2.1/DataViz.Db.AssemblyInfoInputs.cache
+/Users/marksherer/Desktop/DataViz/DataViz.Context/obj/Debug/netcoreapp2.1/DataViz.Db.AssemblyInfo.cs
+/Users/marksherer/Desktop/DataViz/DataViz.Context/obj/Debug/netcoreapp2.1/DataViz.Db.csproj.CopyComplete
+/Users/marksherer/Desktop/DataViz/DataViz.Context/obj/Debug/netcoreapp2.1/DataViz.Db.dll
+/Users/marksherer/Desktop/DataViz/DataViz.Context/obj/Debug/netcoreapp2.1/DataViz.Db.pdb

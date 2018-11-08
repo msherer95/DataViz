@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{199E5AA2-FC92-4180-BB34-1DBC8B95CC0D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DataViz.Query/QueryGenerator.cs">
+    <Files>
+      <File FileName="DataViz/Controllers/ValuesController.cs" Line="58" Column="85" />
+      <File FileName="DataViz/DataViz.csproj" Line="1" Column="1" />
+      <File FileName="DataViz.TableImport/TableGenerator.cs" Line="85" Column="40" />
+      <File FileName="DataViz.Context/Context.cs" Line="7" Column="41" />
+      <File FileName="DataViz.Context/DataViz.Db.csproj" Line="19" Column="1" />
+      <File FileName="DataViz.Contracts/QueryCategories.cs" Line="12" Column="44" />
+      <File FileName="DataViz.Contracts/QueryPopover.cs" Line="18" Column="87" />
+      <File FileName="DataViz.Query/QueryGenerator.cs" Line="26" Column="105" />
+      <File FileName="DataViz.Contracts/PropertyDescriptor.cs" Line="13" Column="78" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/marksherer/Desktop/DataViz/DataViz/Controllers/ValuesController.cs" relfile="DataViz/Controllers/ValuesController.cs" line="94" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.DataViz PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>
