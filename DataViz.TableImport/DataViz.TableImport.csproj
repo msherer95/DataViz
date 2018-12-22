@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DataViz.Contracts\DataViz.Contracts.csproj" />
-    <ProjectReference Include="..\DataViz.Context\DataViz.Db.csproj" />
+    <ProjectReference Include="..\DataViz.Db\DataViz.Db.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="EPPlus" Version="4.5.2.1" />

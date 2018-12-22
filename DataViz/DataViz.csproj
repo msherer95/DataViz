@@ -6,6 +6,8 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\" />
+    <Folder Include="Views\" />
+    <Folder Include="Views\Home\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,8 +19,79 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DataViz.Contracts\DataViz.Contracts.csproj" />
-    <ProjectReference Include="..\DataViz.Context\DataViz.Db.csproj" />
     <ProjectReference Include="..\DataViz.TableImport\DataViz.TableImport.csproj" />
     <ProjectReference Include="..\DataViz.Query\DataViz.Query.csproj" />
+    <ProjectReference Include="..\DataViz.Db\DataViz.Db.csproj" />
   </ItemGroup>
+    
+   <ItemGroup>
+     <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="1.0.0" />
+  </ItemGroup>
+   <ItemGroup>
+     <Content Remove="wwwroot\aspnet-webpack\.npmignore" />
+     <Content Remove="wwwroot\aspnet-webpack\LICENSE.txt" />
+     <Content Remove="wwwroot\aspnet-webpack\LoadViaWebpack.d.ts" />
+     <Content Remove="wwwroot\aspnet-webpack\LoadViaWebpack.js" />
+     <Content Remove="wwwroot\aspnet-webpack\README.md" />
+     <Content Remove="wwwroot\aspnet-webpack\RequireNewCopy.d.ts" />
+     <Content Remove="wwwroot\aspnet-webpack\RequireNewCopy.js" />
+     <Content Remove="wwwroot\aspnet-webpack\WebpackDevMiddleware.d.ts" />
+     <Content Remove="wwwroot\aspnet-webpack\WebpackDevMiddleware.js" />
+     <Content Remove="wwwroot\aspnet-webpack\WebpackTestPermissions.d.ts" />
+     <Content Remove="wwwroot\aspnet-webpack\WebpackTestPermissions.js" />
+     <Content Remove="wwwroot\aspnet-webpack\index.d.ts" />
+     <Content Remove="wwwroot\aspnet-webpack\index.js" />
+     <Content Remove="wwwroot\aspnet-webpack\package.json" />
+     <Content Remove="wwwroot\aspnet-webpack\tsconfig.json" />
+     <Content Remove="wwwroot\aspnet-webpack\src\LoadViaWebpack.ts" />
+     <Content Remove="wwwroot\aspnet-webpack\src\RequireNewCopy.ts" />
+     <Content Remove="wwwroot\aspnet-webpack\src\WebpackDevMiddleware.ts" />
+     <Content Remove="wwwroot\aspnet-webpack\src\WebpackTestPermissions.ts" />
+     <Content Remove="wwwroot\aspnet-webpack\src\index.ts" />
+     <Content Remove="wwwroot\aspnet-webpack\src\typings\memory-fs.d.ts" />
+     <Content Remove="wwwroot\aspnet-webpack\src\typings\require-from-string.d.ts" />
+     <Content Remove="wwwroot\aspnet-webpack\src\typings\webpack-node-externals.d.ts" />
+   </ItemGroup>
+   <ItemGroup>
+     <None Remove="webpack.config.js" />
+   </ItemGroup>
+   <ItemGroup>
+     <Content Include="webpack.config.js">
+       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+     </Content>
+   </ItemGroup>
+   <ItemGroup>
+     <None Include="node_modules\aspnet-webpack\node_modules\memory-fs\lib\join.js" />
+     <None Include="node_modules\aspnet-webpack\node_modules\memory-fs\lib\MemoryFileSystem.js" />
+     <None Include="node_modules\aspnet-webpack\node_modules\memory-fs\lib\normalize.js" />
+     <None Include="node_modules\aspnet-webpack\node_modules\memory-fs\test\MemoryFileSystem.js" />
+     <None Include="node_modules\aspnet-webpack\node_modules\memory-fs\.gitattributes" />
+     <None Include="node_modules\aspnet-webpack\node_modules\memory-fs\.npmignore" />
+     <None Include="node_modules\aspnet-webpack\node_modules\memory-fs\.travis.yml" />
+     <None Include="node_modules\aspnet-webpack\node_modules\memory-fs\package.json" />
+     <None Include="node_modules\aspnet-webpack\node_modules\memory-fs\README.md" />
+     <None Include="node_modules\aspnet-webpack\src\typings\memory-fs.d.ts" />
+     <None Include="node_modules\aspnet-webpack\src\typings\require-from-string.d.ts" />
+     <None Include="node_modules\aspnet-webpack\src\typings\webpack-node-externals.d.ts" />
+     <None Include="node_modules\aspnet-webpack\src\index.ts" />
+     <None Include="node_modules\aspnet-webpack\src\LoadViaWebpack.ts" />
+     <None Include="node_modules\aspnet-webpack\src\RequireNewCopy.ts" />
+     <None Include="node_modules\aspnet-webpack\src\WebpackDevMiddleware.ts" />
+     <None Include="node_modules\aspnet-webpack\src\WebpackTestPermissions.ts" />
+     <None Include="node_modules\aspnet-webpack\.npmignore" />
+     <None Include="node_modules\aspnet-webpack\index.d.ts" />
+     <None Include="node_modules\aspnet-webpack\index.js" />
+     <None Include="node_modules\aspnet-webpack\LICENSE.txt" />
+     <None Include="node_modules\aspnet-webpack\LoadViaWebpack.d.ts" />
+     <None Include="node_modules\aspnet-webpack\LoadViaWebpack.js" />
+     <None Include="node_modules\aspnet-webpack\package.json" />
+     <None Include="node_modules\aspnet-webpack\README.md" />
+     <None Include="node_modules\aspnet-webpack\RequireNewCopy.d.ts" />
+     <None Include="node_modules\aspnet-webpack\RequireNewCopy.js" />
+     <None Include="node_modules\aspnet-webpack\tsconfig.json" />
+     <None Include="node_modules\aspnet-webpack\WebpackDevMiddleware.d.ts" />
+     <None Include="node_modules\aspnet-webpack\WebpackDevMiddleware.js" />
+     <None Include="node_modules\aspnet-webpack\WebpackTestPermissions.d.ts" />
+     <None Include="node_modules\aspnet-webpack\WebpackTestPermissions.js" />
+   </ItemGroup>
 </Project>

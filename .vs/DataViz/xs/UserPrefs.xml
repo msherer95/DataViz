@@ -1,24 +1,36 @@
 ﻿<Properties StartupConfiguration="{199E5AA2-FC92-4180-BB34-1DBC8B95CC0D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="DataViz.Query/QueryGenerator.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DataViz.Db/Context.cs">
     <Files>
-      <File FileName="DataViz/Controllers/ValuesController.cs" Line="58" Column="85" />
       <File FileName="DataViz/DataViz.csproj" Line="1" Column="1" />
-      <File FileName="DataViz.TableImport/TableGenerator.cs" Line="85" Column="40" />
-      <File FileName="DataViz.Context/Context.cs" Line="7" Column="41" />
-      <File FileName="DataViz.Context/DataViz.Db.csproj" Line="19" Column="1" />
-      <File FileName="DataViz.Contracts/QueryCategories.cs" Line="12" Column="44" />
-      <File FileName="DataViz.Contracts/QueryPopover.cs" Line="18" Column="87" />
-      <File FileName="DataViz.Query/QueryGenerator.cs" Line="26" Column="105" />
-      <File FileName="DataViz.Contracts/PropertyDescriptor.cs" Line="13" Column="78" />
+      <File FileName="DataViz.Contracts/QueryPopover.cs" Line="13" Column="23" />
+      <File FileName="DataViz.Query/QueryGenerator.cs" Line="52" Column="1" />
+      <File FileName="DataViz/Controllers/ValuesController.cs" Line="17" Column="20" />
+      <File FileName="DataViz.Contracts/QueryRequest.cs" Line="16" Column="21" />
+      <File FileName="DataViz/Views/Home/Index.cshtml" Line="10" Column="8" />
+      <File FileName="DataViz/Controllers/HomeController.cs" Line="22" Column="6" />
+      <File FileName="DataViz/Program.cs" Line="25" Column="1" />
+      <File FileName="DataViz/Properties/launchSettings.json" Line="11" Column="7" />
+      <File FileName="DataViz.TableImport/TableGenerator.cs" Line="62" Column="82" />
+      <File FileName="DataViz.Db/Context.cs" Line="20" Column="10" />
+      <File FileName="DataViz.Contracts/QueryCategories.cs" Line="13" Column="62" />
+      <File FileName="../../../../usr/local/share/dotnet/sdk/2.2.101/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.ObsoleteReferences.targets" Line="33" Column="5" />
+      <File FileName="DataViz/Startup.cs" Line="36" Column="107" />
+      <File FileName="DataViz.Contracts/TableResult.cs" Line="10" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.DataViz PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/marksherer/Desktop/DataViz/DataViz/Controllers/ValuesController.cs" relfile="DataViz/Controllers/ValuesController.cs" line="94" column="1" />
+      <Breakpoint file="/Users/marksherer/Desktop/DataViz/DataViz.Db/Context.cs" relfile="DataViz.Db/Context.cs" line="36" column="43" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.DataViz PreferredExecutionTarget="MonoDevelop.Default" />
-  <MultiItemStartupConfigurations />
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="Default" Name="Default">
+      <Items>
+        <StartupItem ItemId="{199E5AA2-FC92-4180-BB34-1DBC8B95CC0D}" ItemName="DataViz" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
 </Properties>

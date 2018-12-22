@@ -1,13 +1,20 @@
 ﻿using System;
 using System.Runtime.Serialization;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DataViz.Contracts
 {
     [DataContract]
     public class QueryRequest
     {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
+
         [DataMember]
+        [Required]
         public string TableName { get; set; }
 
         [DataMember]
@@ -18,6 +25,12 @@ namespace DataViz.Contracts
         /// </summary>
         [DataMember]
         public List<string> YCols { get; set; }
+
+        [DataMember]
+        public int Skip { get; set; }
+
+        [DataMember]
+        public int Take { get; set; }
 
         [DataMember]
         public string GraphType { get; set; }
@@ -36,7 +49,7 @@ namespace DataViz.Contracts
         /// for further differentiation.
         /// </summary>
         [DataMember]
-        public QueryCategories Categories { get; set; }
+        public virtual QueryCategories Categories { get; set; }
 
         /// <summary>
         /// Maps function name to the function.
@@ -49,7 +62,7 @@ namespace DataViz.Contracts
         /// Describes how the hover popover should look
         /// </summary>
         [DataMember]
-        public QueryPopover Popover { get; set; }
+        public virtual QueryPopover Popover { get; set; }
 
         /// <summary>
         /// Appearance specifications. This will get it's own type when we get

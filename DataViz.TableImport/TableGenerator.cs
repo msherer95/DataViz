@@ -16,7 +16,7 @@ namespace DataViz.TableImport
 
         public TableGenerator(Context context)
         {
-            this._context = context;
+            _context = context;
         }
 
         /// <summary>
@@ -86,8 +86,14 @@ namespace DataViz.TableImport
                             query.AppendLine($"insert into \"{tableName}\" values ("); // start the insert
                             var rowList = new List<string> { id.ToString() };
 
-                            // Get columns 1 through totalColumns of this entire row. Add quotes to the value so strings get inserted correctly.
-                            var selectedRow = cells[rowIdx, 1, rowIdx, totalCols].Select(cell => cell.Value == null ? "null" : $"'{cell.Value.ToString()}'");
+                            var selectedRow = new List<string>();
+                            for (int colIdx = 1; colIdx <= totalCols; colIdx++)
+                            {
+                                ExcelRange cell = cells[rowIdx, colIdx];
+                                string value = cell.Value == null ? "null" : String.Format("'{0}'", cell.Value.ToString());
+                                selectedRow.Add(value);
+                            }
+
                             rowList = rowList.Concat(selectedRow).ToList(); // join with Id
                             var formattedRow = string.Join(',', rowList); // join all input values with a comma
                             query.AppendLine($"{formattedRow});"); // add in entire row of data

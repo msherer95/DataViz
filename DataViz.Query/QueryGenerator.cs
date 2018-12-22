@@ -23,9 +23,9 @@ namespace DataViz.Query
         {
             // Get all the columns we need to request. This includes X, Y, and category columns.
             // To differentiate categorical columns, we add __CAT__ to the beginning
-            List<string> modifiedCategoryColumns = req.Categories.Columns.Select(col => "__CAT__" + col).ToList();
-            List<string> allCols = req.YCols.Concat(modifiedCategoryColumns).ToList();
-            allCols.Add(req.XCol);
+            var allCols = new List<string>() { req.XCol };
+            List<string> modifiedCategoryColumns = req.Categories.Columns.Select(col => $"\"{col}\" as \"__CAT__{col}\"").ToList();
+            allCols = allCols.Concat(req.YCols).Concat(modifiedCategoryColumns).ToList();
 
             // Add each function as another column in the SELECT.
             foreach(KeyValuePair<string, string> fn in req.Functions)
@@ -42,11 +42,16 @@ namespace DataViz.Query
             query.AppendLine(", CASE ");
             foreach (KeyValuePair<string, string> consWithNames in req.Categories.Conditionals)
             {
-                query.AppendLine($" WHEN {consWithNames.Key} THEN {consWithNames.Value}");
+                query.AppendLine($" WHEN {consWithNames.Key} THEN '{consWithNames.Value}'");
             }
 
             query.AppendLine("END"); // terminate the case when
             query.AppendLine($" FROM {req.TableName} {req.Filters}"); // choose the table and add a filter
+
+            // pagination
+            query.AppendLine($"LIMIT {req.Take}");
+            query.AppendLine($"OFFSET {req.Skip}");
+
             return query.ToString();
         }
     }

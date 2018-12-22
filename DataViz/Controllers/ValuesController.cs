@@ -9,12 +9,13 @@ using DataViz.TableImport;
 using System.IO;
 using DataViz.Query;
 using Microsoft.EntityFrameworkCore;
+using Npgsql;
 
 namespace DataViz
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class ValuesController : Controller
     {
         readonly Context _context;
 
@@ -53,11 +54,36 @@ namespace DataViz
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+        }   
+
+        [HttpPost("QueryRequest")]
+        public ActionResult<QueryRequest> QueryRequest()
+        {
+            var a = new QueryRequest()
+            {
+                Id = _context.QueryRequests.Count() + 1000,
+                TableName = "SomeTable",
+                Categories = new QueryCategories()
+                {
+                    Columns = new List<string>() { "c", "d"}
+                }
+            };
+
+            _context.QueryRequests.Add(a);
+            _context.SaveChanges();
+
+            return _context.QueryRequests.Include(x => x.Categories).First();
+        }
+
+        [HttpPost("TestReader")]
+        public ActionResult<TableResult> TestReader()
+        {
+           return _context.SqlReadQuery("select * from \"QueryRequests\";");
         }
 
         // Currently being used as a post method, but will be moved into a unit test
         [HttpPost("CreateTable")]
-        public void CreateTable([FromBody] Dictionary<string, List<PropertyDescriptor>> tableNameToProperties)
+        public ActionResult<TableResult> CreateTable([FromBody] Dictionary<string, List<PropertyDescriptor>> tableNameToProperties)
         {
             try
             {
@@ -76,7 +102,7 @@ namespace DataViz
                     TableName = "\"MyTable\"",
                     Categories = new QueryCategories()
                     {
-                        Columns = new List<string> { "\"Name\"" },
+                        Columns = new List<string> { "Name" },
                         Conditionals = new Dictionary<string, string>()
                         {
                             {"\"Height\" > 20", "tall"},
@@ -86,11 +112,13 @@ namespace DataViz
                     Functions = new Dictionary<string, string>()
                     {
                         {"SomeFn", "(\"Age\" * \"Height\")/2"}
-                    }
+                    },
+                    Skip = 0,
+                    Take = 25
                 };
 
                 string query = new QueryGenerator(_context).Generate(req);
-                _context.Database.ExecuteSqlCommand(query);
+               return _context.SqlReadQuery(query);
             }
             catch (Exception e)
             {

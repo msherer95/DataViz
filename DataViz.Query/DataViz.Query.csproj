@@ -6,6 +6,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DataViz.Contracts\DataViz.Contracts.csproj" />
-    <ProjectReference Include="..\DataViz.Context\DataViz.Db.csproj" />
+    <ProjectReference Include="..\DataViz.Db\DataViz.Db.csproj" />
   </ItemGroup>
 </Project>
