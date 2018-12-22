@@ -110,5 +110,25 @@ namespace DataViz.TableImport
             query.AppendLine("commit;"); // complete the transaction
             _context.Database.ExecuteSqlCommand(query.ToString());
         }
+
+        public void UpdateTables(Dictionary<string, List<PropertyDescriptor>> tableNameToProperties)
+        {
+            DeleteTables(tableNameToProperties.Keys.ToList());
+            CreateTables(tableNameToProperties);
+        }
+
+        void DeleteTables(List<string> tableNames)
+        {
+            StringBuilder query = new StringBuilder();
+            query.Append("begin;");
+
+            foreach(string tableName in tableNames)
+            {
+                query.AppendLine($"drop table \"{tableName}\"");
+            }
+
+            query.AppendLine("commit;");
+            _context.Database.ExecuteSqlCommand(query.ToString());
+        }
     }
 }

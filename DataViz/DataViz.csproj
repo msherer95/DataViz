@@ -94,4 +94,7 @@
      <None Include="node_modules\aspnet-webpack\WebpackTestPermissions.d.ts" />
      <None Include="node_modules\aspnet-webpack\WebpackTestPermissions.js" />
    </ItemGroup>
+   <ItemGroup>
+     <Compile Remove="Controllers\ValuesController.cs" />
+   </ItemGroup>
 </Project>

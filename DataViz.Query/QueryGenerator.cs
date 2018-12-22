@@ -57,13 +57,11 @@ namespace DataViz.Query
                 string groups = string.Join(',', req.Groups);
                 return $"SELECT {aggregateFns}, {groups} FROM ({query}) as \"x\" GROUP BY {groups}";
             }
-            else
-            {
-                // pagination
-                query.AppendLine($"LIMIT {req.Take}");
-                query.AppendLine($"OFFSET {req.Skip}");
-                return query.ToString();
-            }
+
+            // pagination
+            query.AppendLine($"LIMIT {req.Take}");
+            query.AppendLine($"OFFSET {req.Skip}");
+            return query.ToString();
         }
     }
 }

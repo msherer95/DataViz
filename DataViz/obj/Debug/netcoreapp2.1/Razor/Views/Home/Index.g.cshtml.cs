@@ -43,7 +43,7 @@ namespace AspNetCore
             WriteLiteral("<html>\n    ");
             EndContext();
             BeginContext(11, 185, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7af1b71088ed431a8a9dfc425f902e76", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "99709d9375a741fba81e484ba1715a94", async() => {
                 BeginContext(17, 172, true);
                 WriteLiteral("\r\n        <script src=\"./node_modules/react/umd/react.development.js\"></script>\r\n        <script src=\"./node_modules/react-dom/umd/react-dom.development.js\"></script>\r\n    ");
                 EndContext();
@@ -63,7 +63,7 @@ namespace AspNetCore
             WriteLiteral("\n    ");
             EndContext();
             BeginContext(201, 109, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e3d570b82e4049509075abf4779a9e8d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2f67543e35714d13a85a4e03d7fee7c3", async() => {
                 BeginContext(207, 96, true);
                 WriteLiteral("\r\n        <div id=\"app-container\"></div>\r\n        <script src=\"./dist/bundle.js\"></script>\r\n    ");
                 EndContext();

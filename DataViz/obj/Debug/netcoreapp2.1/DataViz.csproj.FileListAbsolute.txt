@@ -1,9 +1,3 @@
-/Users/marksherer/Desktop/DataViz/DataViz/obj/Debug/netcoreapp2.1/DataViz.csprojAssemblyReference.cache
-/Users/marksherer/Desktop/DataViz/DataViz/obj/Debug/netcoreapp2.1/DataViz.csproj.CoreCompileInputs.cache
-/Users/marksherer/Desktop/DataViz/DataViz/obj/Debug/netcoreapp2.1/DataViz.RazorAssemblyInfo.cache
-/Users/marksherer/Desktop/DataViz/DataViz/obj/Debug/netcoreapp2.1/DataViz.RazorAssemblyInfo.cs
-/Users/marksherer/Desktop/DataViz/DataViz/obj/Debug/netcoreapp2.1/DataViz.AssemblyInfoInputs.cache
-/Users/marksherer/Desktop/DataViz/DataViz/obj/Debug/netcoreapp2.1/DataViz.AssemblyInfo.cs
 /Users/marksherer/Desktop/DataViz/DataViz/bin/Debug/netcoreapp2.1/DataViz.deps.json
 /Users/marksherer/Desktop/DataViz/DataViz/bin/Debug/netcoreapp2.1/DataViz.runtimeconfig.json
 /Users/marksherer/Desktop/DataViz/DataViz/bin/Debug/netcoreapp2.1/DataViz.runtimeconfig.dev.json
@@ -19,6 +13,12 @@
 /Users/marksherer/Desktop/DataViz/DataViz/bin/Debug/netcoreapp2.1/DataViz.TableImport.pdb
 /Users/marksherer/Desktop/DataViz/DataViz/bin/Debug/netcoreapp2.1/DataViz.Query.pdb
 /Users/marksherer/Desktop/DataViz/DataViz/bin/Debug/netcoreapp2.1/DataViz.Db.pdb
+/Users/marksherer/Desktop/DataViz/DataViz/obj/Debug/netcoreapp2.1/DataViz.csprojAssemblyReference.cache
+/Users/marksherer/Desktop/DataViz/DataViz/obj/Debug/netcoreapp2.1/DataViz.csproj.CoreCompileInputs.cache
+/Users/marksherer/Desktop/DataViz/DataViz/obj/Debug/netcoreapp2.1/DataViz.RazorAssemblyInfo.cache
+/Users/marksherer/Desktop/DataViz/DataViz/obj/Debug/netcoreapp2.1/DataViz.RazorAssemblyInfo.cs
+/Users/marksherer/Desktop/DataViz/DataViz/obj/Debug/netcoreapp2.1/DataViz.AssemblyInfoInputs.cache
+/Users/marksherer/Desktop/DataViz/DataViz/obj/Debug/netcoreapp2.1/DataViz.AssemblyInfo.cs
 /Users/marksherer/Desktop/DataViz/DataViz/obj/Debug/netcoreapp2.1/DataViz.TagHelpers.input.cache
 /Users/marksherer/Desktop/DataViz/DataViz/obj/Debug/netcoreapp2.1/DataViz.TagHelpers.output.cache
 /Users/marksherer/Desktop/DataViz/DataViz/obj/Debug/netcoreapp2.1/DataViz.RazorCoreGenerate.cache
