@@ -23,9 +23,12 @@ namespace DataViz.Query
         {
             // Get all the columns we need to request. This includes X, Y, and category columns.
             // To differentiate categorical columns, we add __CAT__ to the beginning
-            var allCols = new List<string>() { req.XCol };
-            List<string> modifiedCategoryColumns = req.Categories.Columns.Select(col => $"\"{col}\" as \"__CAT__{col}\"").ToList();
-            allCols = allCols.Concat(req.YCols).Concat(modifiedCategoryColumns).ToList();
+
+            KeyValuePair<string, string> xCol = req.XCol.First();
+
+            var allCols = new List<string>() { $"{xCol.Key} as \"{xCol.Value}\"" };
+            List<string> modifiedCategoryColumns = req.Categories.Columns.Select(col => $"\"{col}\" as \"{col}\"").ToList();
+            allCols = allCols.Concat(req.YCols.Select(y => $"{y.Key} as \"{y.Value}\"")).Concat(modifiedCategoryColumns).ToList();
 
             // Add each function as another column in the SELECT.
             foreach(KeyValuePair<string, string> fn in req.Functions)
@@ -39,7 +42,7 @@ namespace DataViz.Query
             var query = new StringBuilder($"select {allColsCommaSep}");
 
             // create case when statements for any conditional categories
-            query.AppendLine(", CASE ");
+            query.AppendLine(", CASE ");    
             foreach (KeyValuePair<string, string> consWithNames in req.Categories.Conditionals)
             {
                 query.AppendLine($" WHEN {consWithNames.Key} THEN '{consWithNames.Value}'");
@@ -48,11 +51,19 @@ namespace DataViz.Query
             query.AppendLine("END"); // terminate the case when
             query.AppendLine($" FROM {req.TableName} {req.Filters}"); // choose the table and add a filter
 
-            // pagination
-            query.AppendLine($"LIMIT {req.Take}");
-            query.AppendLine($"OFFSET {req.Skip}");
-
-            return query.ToString();
+            if (req.Groups.Count > 0)
+            {
+                string aggregateFns = string.Join(',', req.AggregateFunctions.Select(f => $"{f.Key} as \"{f.Value}\""));
+                string groups = string.Join(',', req.Groups);
+                return $"SELECT {aggregateFns}, {groups} FROM ({query}) as \"x\" GROUP BY {groups}";
+            }
+            else
+            {
+                // pagination
+                query.AppendLine($"LIMIT {req.Take}");
+                query.AppendLine($"OFFSET {req.Skip}");
+                return query.ToString();
+            }
         }
     }
 }

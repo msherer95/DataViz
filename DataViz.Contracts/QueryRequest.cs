@@ -18,13 +18,13 @@ namespace DataViz.Contracts
         public string TableName { get; set; }
 
         [DataMember]
-        public string XCol { get; set; }
+        public Dictionary<string, string> XCol { get; set; }
 
         /// <summary>
         /// Any Y columns that should be included, can be multiple.
         /// </summary>
         [DataMember]
-        public List<string> YCols { get; set; }
+        public Dictionary<string, string> YCols { get; set; }
 
         [DataMember]
         public int Skip { get; set; }
@@ -37,6 +37,12 @@ namespace DataViz.Contracts
 
         [DataMember]
         public string GraphSubType { get; set; }
+
+        [DataMember]
+        public List<string> Groups { get; set; }
+
+        [DataMember]
+        public Dictionary<string, string> AggregateFunctions { get; set; }
 
         /// <summary>
         /// A WHERE clause
